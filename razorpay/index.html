@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Razorpay Button</title>
   </head>
   <body>
-    <button id="rzp-button1">Pay</button>
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="/cart">My Cart</a>
+        <a href="/profile">Profile</a>
+      </div>
+    </nav>
+    <h1>Address</h1>
+    <div class="container">
+      <input type="text" id="address" placeholder="Address" />
+      <input type="text" id="city" placeholder="City" />
+      <input type="text" id="state" placeholder="State" />
+      <input type="text" id="country" placeholder="Country" value="India"/>
+      <input type="text" id="pin" placeholder="Pin Code" />
+      <p id="error"></p>
+      <p>Total Amount: <span id="totalUSD"></span> ≈ <span id="totalINR"></span></p>
+      <button id="rzp-button1">Pay</button>
+    </div>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="script.js"></script>
   </body>

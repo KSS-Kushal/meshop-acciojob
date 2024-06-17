@@ -66,10 +66,11 @@ main aside {
   flex: 0.2;
   background-color: black;
   color: white;
-  height: 100vh;
+  height: 93%;
   position: fixed;
   padding-top: 1rem;
-  width: 11rem;
+  width: 12rem;
+  overflow-y: scroll;
 }
 
 main main-content {

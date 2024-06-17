@@ -6,7 +6,7 @@
     <title>MeShop.</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -18,21 +18,17 @@
         <a href="/">Home</a>
         <a href="/shop">Shop</a>
         <a href="/login">Login</a>
-        <a href="/signup">Sign Up</a>
       </div>
     </nav>
+    <h1>Sign Up</h1>
     <div class="container">
-      <div class="left">
-        <h1>MeShop.</h1>
-        <p>Your First Shop built on HTML, CSS And JavaScript</p>
-        <div class="buttonContainer">
-          <button onclick="login()">Login</button>
-          <button class="outline" onclick="signup()">Signup</button>
-        </div>
-      </div>
-      <div class="right">
-        <img src="landingPagePic.png" alt="" srcset="">
-      </div>
+      <input type="text" id="fname" placeholder="First Name" />
+      <input type="text" id="lname" placeholder="Last Name"/>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+      <p id="error"></p>
+      <button id="signUp">Sign Up</button>
     </div>
     <script src="script.js"></script>
   </body>
