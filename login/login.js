@@ -21,6 +21,9 @@ document.getElementById("login").addEventListener("click", () => {
                             token: getToken(20),
                         })
                     );
+                    error.textContent = "Successfully login!";
+                    error.style.color = "#00FF00";
+                    error.style.display = "block";
                     window.location.href = "/profile";
                 }else {
                     error.textContent = "Invalid credentials!";
