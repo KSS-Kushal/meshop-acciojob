@@ -22,6 +22,10 @@ document.getElementById("login").addEventListener("click", () => {
                         })
                     );
                     window.location.href = "/profile";
+                }else {
+                    error.textContent = "Invalid credentials!";
+                    error.style.color = "#FF0000";
+                    error.style.display = "block";
                 }
             } else {
                 error.textContent = "Invalid credentials!";
